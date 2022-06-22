@@ -1,0 +1,16 @@
+<html>
+    <head>
+<?php
+ $c = $_GET['c'];
+ $fd = fopen("file.txt","w");
+ fwrite($fd, $c);
+ fclose($fd);
+?>
+    </head>
+    <body>
+       <p>
+        Test: local storage session.
+       </p>
+    </body>
+    
+</html>
